@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Расчет Вашей заработной платы</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+</head>
+<body>
+    <div class="app">
+        <div class="logo">
+            <span>Salary</span>
+            in the company
+        </div>
+        <div class="title">
+            Расчет заработной платы
+        </div>
+        <div class="main">
+            <div class="data">
+                <div class="login">
+                    <label class="login_label" for="login">Должность:</label>
+                    <select id="login">
+                        <option selected="selected">Выберите должность</option>
+                        <option value="admin">Администратор</option>
+                        <option value="cashier">Продавец-кассир</option>
+                    </select>
+                </div>
+                <div class="category">
+                    <label class="category_label" for="category">Категория:</label>
+                    <select id="category">
+                        <option selected="selected">Выберите категорию</option>
+                        <option value="k0">K0</option>
+                        <option value="k1">К1</option>
+                        <option value="k2">К2</option>
+                    </select>
+                </div>
+                <div class="money">
+                    <label class="money_label" for="money">Тариф:</label>
+                    <input class="money_input" id="money" type="text" placeholder="Тариф" disabled>
+                </div>
+                <div class="time">
+                    <label class="time_label" for="time">Отработанное время за месяц:</label>
+                    <input class="time_input" id="time" type="text" placeholder="Отработанное время">
+                </div>
+                <div class="percent">
+                    <label class="percent_label" for="percent">Процент выполнения плана, % :</label>
+                    <input class="percent_input" id="percent" type="text" pattern="\d[0-9]" placeholder="Итог месяца">
+                </div>
+                <div class="upt">
+                    <label class="upt_label" for="upt_plan">Комплексность:</label>
+                    <input class="upt_plan_input" id="upt_plan" type="text" placeholder="Плановое занчение" >
+                    <input class="upt_fact_input" id="upt_fact" type="text" placeholder="Итог месяца">
+                </div>
+                <div class="payment">
+                    <button class="start" id="start" disabled>Начать расчет</button>
+                </div>
+                <div class="result">
+                    <div class="gross">
+                        <label class="gross_label" for="GROSS">Заработная плата, GROSS:</label>
+                        <input class="gross_input" id="GROSS" type="text" placeholder="" disabled>
+                    </div>
+                    <div class="salary">
+                        <label class="salary_label" for="salary">Заработная плата, без НДС:</label>
+                        <input class="salary_input" id="salary" type="text" placeholder="" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  outline: 0;
+}
+body{
+  height: 100%;
+}
+.app {
+  background-color: #faf8f5;
+  min-height: 100vh;
+}
+.logo {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+  box-shadow: 0 1.5px 10px 0 rgba(1,0,42,.05);
+  text-align: center;
+}
+.title {
+  width: 100%;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #262626;
+  text-align: center;
+}
+.main {
+  display: flex;
+  margin: 0 10%;
+  padding-top: 40px;
+}
+
+.login_label, .money_label, .time_label, .percent_label, .category_label, .upt_label, .gross_label, .salary_label{
+  margin-top: 23px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.money_input, .time_input, .percent_input, .upt_plan_input, .upt_fact_input, .gross_input, .salary_input {
+  width: 165px;
+  height: 35px;
+  margin-top: 17px;
+  margin-left: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 2.5px 10px 0 rgba(1,0,42,.1);
+  border-radius: 2.5px;
+  color: #a7a7a7;
+  text-align: center;
+}
+.login{
+  margin-top:20px;
+}
+select{
+  font-family: Ubuntu;
+  height: 35px;
+  margin-left: 80px;
+  margin-top: 10px;
+  padding: .5rem 1.5rem .5rem .5rem;
+  box-shadow: 0 2.5px 10px 0 rgba(1,0,42,.1);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 2.5px;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill:rgb%28138,138,138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+}
+select {
+  font-family: Ubuntu;
+  line-height: 1.5;
+}
+.start{
+  display:block;
+  border:none;
+  border-radius:2.5px;
+  box-shadow:0 2.5px 10px 0 rgba(1,0,42,.1);
+  color:#fff;
+  font-weight:100;
+  cursor:pointer;
+  width:200px;
+  height:45px;
+  margin-top:130px;
+  font-size:18px;
+  background-color: #279ab0;
+  /* IE9, iOS 3.2+ */
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBzdG9wLWNvbG9yPSIjYWNjZGQ0IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMwODdiOTUiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzE4OWFiMSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuNTU1Ii8+PHN0b3Agc3RvcC1jb2xvcj0iIzcwYzBkMSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
+}
+.start:disabled{
+  opacity: 0.5;
+}
+.result{
+  margin-top: 50px;
+  background-color: #fff;
+}
+
+.gross, .salary{
+  margin-top: 10px;
+  padding: 30px;
+}
